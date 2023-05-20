@@ -349,18 +349,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .asko_img {
+    position: relative;
     width: 210px;
     height: 210px;
+    background: url(../img/photo_2022-08-23_12-58-34.jpg) no-repeat center / cover;
     border-radius: 100px;
-}
-
-
-.asko_img > img {
-    border-radius: 100px;
-    border: 3px solid rgb(69, 168, 69);
-    box-shadow: 0 0 10px rgb(66, 65, 65);
-    width: 210px;
-    height: 210px;
+    border: 2px solid #38cbe2;
 }
 
 .start {
@@ -404,6 +398,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .side_subtitle_style {
+    display: flex;
     margin-top: 20px ; 
     text-align: center;
 }
@@ -412,7 +407,6 @@ h1,h2,h3,h4,h5,h6 {
 .side_subtitle{
     display: inline-block;
     text-align: justify ;
-    width: 400px;
     padding: 0;
     margin: 0 40px;
     font-size: 18px;
@@ -424,4 +418,75 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 25px;
     text-align: center;
     padding-bottom: 15px;
+}
+
+
+        /* MEDIA */
+
+
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 300px;
+    }
+    .header__inner {
+        display: inline-block;
+        text-align: center;
+    }
+    .nav {
+        text-align: center;
+        display: block;
+    }
+    .intro__title {
+        font-size: 63px
+        }
+    .intro__suptitle {
+        font-size: 20px
+    }
+        
+    .btn {
+        padding: 4px 15px;
+        font-size: 10px;
+    }
+                /* SECTION */
+    .section {
+        padding: 40px 0;
+    }
+    .section__header__group {
+        display: block;
+    }
+    .section__suptitle {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .section__text {
+        font-size: 16px;
+    }
+        
+            /* TELEGRAM */
+        
+    .telegram_text {
+        font-size: 18px;
+    }
+    .telegram_item {
+        margin: 0;
+    }
+    .telegram_item {
+        width: 250px;
+        max-height: 360px;
+    }
+    .tg-img img {
+        width: 250px;
+        max-height: 360px;
+    }
+        
+        
+                /* .side_subtitle_style */
+        
+    .side_subtitle_style   {
+        display: block;
+    }
+        
 }
